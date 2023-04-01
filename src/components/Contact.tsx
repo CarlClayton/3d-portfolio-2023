@@ -12,7 +12,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -43,7 +43,6 @@ const Contact = () => {
             </span>
             <input
               type="text"
-              name="name"
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 
               placeholder:text-secondary text-white 
@@ -68,7 +67,6 @@ const Contact = () => {
             </span>
             <input
               type="email"
-              name="email"
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 
               placeholder:text-secondary text-white 
@@ -93,7 +91,6 @@ const Contact = () => {
             </span>
             <textarea
               rows={7}
-              name="message"
               placeholder="What's your message?"
               className="bg-tertiary py-4 px-6 
               placeholder:text-secondary text-white 

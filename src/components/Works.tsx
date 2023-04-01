@@ -6,6 +6,20 @@ import { SectionWrapper } from "../hoc";
 import { projects, projects_intro } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+type Tag = {
+  name: string;
+  color: string;
+};
+
+type Props = {
+  index: number;
+  name: string;
+  description: string;
+  tags: Tag[];
+  image: string;
+  source_code_link: string;
+};
+
 const ProjectCard = ({
   index,
   name,
@@ -13,11 +27,11 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-}) => {
+}: Props) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{
+        data-options={{
           max: 45,
           scale: 1,
           speed: 450,

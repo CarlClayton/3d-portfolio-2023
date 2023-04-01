@@ -4,6 +4,15 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
+type Props = {
+  index: number;
+  testimonial: string;
+  name: string;
+  designation: string;
+  company: string;
+  image: string;
+};
+
 const FeedbackCard = ({
   index,
   testimonial,
@@ -11,7 +20,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
-}) => (
+}: Props) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"

@@ -9,7 +9,19 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => (
+type Props = {
+  key: number;
+  experience: {
+    title: string;
+    company_name: string;
+    icon: string;
+    iconBg: string;
+    date: string;
+    points: string[];
+  };
+};
+
+const ExperienceCard = ({ experience }: Props) => (
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}

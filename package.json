@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,11 +20,13 @@
     "react-parallax-tilt": "^1.7.121",
     "react-router-dom": "^6.10.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.151.2"
+    "three": "^0.151.2",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@types/react-vertical-timeline-component": "^3.3.3",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
