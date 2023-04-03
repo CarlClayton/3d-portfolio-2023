@@ -1,10 +1,10 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { github, link } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects, projects_intro } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { projects } from "../constants";
+import { fadeIn } from "../utils/motion";
+import { SectionHeader } from "./";
 
 type Tag = {
   name: string;
@@ -90,22 +90,20 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const { header, subText, intro, examples } = projects;
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My projects</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
+      <SectionHeader headText={header} subText={subText} />
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          {projects_intro}
+          {intro}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+        {examples.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
             index={index}
@@ -117,4 +115,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works);

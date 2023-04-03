@@ -2,14 +2,9 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { staggerContainer } from "../utils/motion";
 
-type Props = {
-  Component: JSX.Element;
-  idName: string;
-};
-
 const SectionWrapper = (
   Component: () => JSX.Element,
-  idName: string
+  idName?: string | ""
 ) =>
   function HOC() {
     return (
