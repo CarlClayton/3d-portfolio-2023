@@ -215,6 +215,7 @@ const projects = [
       },
     ],
     image: evogym,
+    deployed_link: "https://lucent-basbousa-c6bc2d.netlify.app/",
     source_code_link: "https://github.com/CarlClayton/gym-typescript",
   },
   {
@@ -236,6 +237,7 @@ const projects = [
       },
     ],
     image: cryptoverse,
+    deployed_link: "https://benevolent-kangaroo-7dc2fb.netlify.app/",
     source_code_link: "https://github.com/",
   },
   {
@@ -257,6 +259,7 @@ const projects = [
       },
     ],
     image: dollabank,
+    deployed_link: "https://endearing-flan-b6c485.netlify.app/",
     source_code_link: "https://github.com/CarlClayton/bank-app",
   },
 ];
