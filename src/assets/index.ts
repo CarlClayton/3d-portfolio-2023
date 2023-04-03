@@ -25,17 +25,12 @@ import threejs from "./tech/threejs.svg";
 import hsbc from "./company/hsbc.png";
 import covea from "./company/covea.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 import cryptoverse from "./cryptoverse.png";
 import dollabank from "./dolla-bank.png";
 import evogym from "./evogym.png";
 
 export {
   backend,
-  carrent,
   close,
   covea,
   creator,
@@ -50,7 +45,6 @@ export {
   hsbc,
   html,
   javascript,
-  jobit,
   logo,
   menu,
   mobile,
@@ -60,7 +54,6 @@ export {
   redux,
   tailwind,
   threejs,
-  tripguide,
   typescript,
   web,
   link,

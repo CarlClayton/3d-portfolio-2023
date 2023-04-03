@@ -17,9 +17,6 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   evogym,
   cryptoverse,
@@ -199,7 +196,7 @@ projects effectively.`;
 const projects = [
   {
     name: "EvoGym",
-    description: "Typescript Fitness Application tutorial",
+    description: "Typescript Fitness Application with contact form",
     tags: [
       {
         name: "react",
