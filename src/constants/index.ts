@@ -21,6 +21,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  evogym,
+  cryptoverse,
+  dollabank,
 } from "../assets";
 
 export const navLinks = [
@@ -195,16 +198,15 @@ projects effectively.`;
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "EvoGym",
+    description: "Typescript Fitness Application tutorial",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
@@ -212,13 +214,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: evogym,
+    source_code_link: "https://github.com/CarlClayton/gym-typescript",
   },
   {
-    name: "Job IT",
+    name: "Cryptoverse",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to search for cryptocurrencies, view their current value, and read crypto related news articles.",
     tags: [
       {
         name: "react",
@@ -233,20 +235,20 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: cryptoverse,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Dolla Bank",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "React banking website using styled components and React smooth scroll. The website is fully responsive using React Hooks and React Router",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react-router",
         color: "green-text-gradient",
       },
       {
@@ -254,8 +256,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: dollabank,
+    source_code_link: "https://github.com/CarlClayton/bank-app",
   },
 ];
 
