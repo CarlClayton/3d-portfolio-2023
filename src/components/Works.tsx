@@ -1,7 +1,7 @@
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, projects_intro } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -18,6 +18,7 @@ type Props = {
   tags: Tag[];
   image: string;
   source_code_link: string;
+  deployed_link: string;
 };
 
 const ProjectCard = ({
@@ -27,6 +28,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  deployed_link,
 }: Props) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -45,6 +47,17 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            <div
+              onClick={() => window.open(deployed_link, "_blank")}
+              className="white-gradient w-10 h-10 rounded-full flex 
+              justify-center items-center cursor-pointer"
+            >
+              <img
+                src={link}
+                alt="link"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex 
