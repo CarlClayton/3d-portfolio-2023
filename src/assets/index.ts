@@ -28,14 +28,21 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import cryptoverse from "./cryptoverse.png";
+import dollabank from "./dolla-bank.png";
+import evogym from "./evogym.png";
+
 export {
   backend,
   carrent,
   close,
   covea,
   creator,
+  cryptoverse,
   css,
   docker,
+  dollabank,
+  evogym,
   figma,
   git,
   github,
